@@ -1,0 +1,24 @@
+{
+  "name": "meetthepollutants",
+  "version": "1.0.0",
+  "description": "Healthy Land and Water",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomc98/MeetThePollutants.git"
+  },
+  "author": "Thomas Csere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomc98/MeetThePollutants/issues"
+  },
+  "homepage": "https://github.com/tomc98/MeetThePollutants#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1"
+  }
+}

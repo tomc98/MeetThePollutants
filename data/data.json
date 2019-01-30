@@ -1,7 +1,11 @@
 {
     "events":[
-        {"title":"example3","date":"01/02/2020","url":"#","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultrices nibh, eget tristique ligula. Maecenas id suscipit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Praesent viverra velit est, efficitur pellentesque."},
-        {"title":"example3","date":"01/02/2020","url":"#","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultrices nibh, eget tristique ligula. Maecenas id suscipit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Praesent viverra velit est, efficitur pellentesque."},
+        {"title":"example1","date":"01/02/2020","url":"#","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultrices nibh, eget tristique ligula. Maecenas id suscipit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Praesent viverra velit est, efficitur pellentesque."},
+        {"title":"example2","date":"01/02/2020","url":"#","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultrices nibh, eget tristique ligula. Maecenas id suscipit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Praesent viverra velit est, efficitur pellentesque."},
         {"title":"example3","date":"01/02/2020","url":"#","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel ultrices nibh, eget tristique ligula. Maecenas id suscipit massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Praesent viverra velit est, efficitur pellentesque."}
+    ],
+    "caseStudies":[
+        [{"fileName":"file1.pdf", "fileImg":"file1.png"},{"fileName":"file2.pdf", "fileImg":"file2.png"},{"fileName":"file3.pdf", "fileImg":"file3.png"}],
+        [{"fileName":"file4.pdf", "fileImg":"file4.png"},{"fileName":"whatever.pdf", "fileImg":"whatever.png"},{"fileName":"file3.pdf", "fileImg":"file3.png"}]
     ]
 }

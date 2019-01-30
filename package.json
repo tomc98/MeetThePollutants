@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tomc98/MeetThePollutants#readme",
   "dependencies": {
+    "date-and-time": "^0.6.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jquery": "^3.3.1"

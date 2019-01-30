@@ -29,10 +29,8 @@
         <div class="container-fluid" style="margin-top:30px">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <h2>Pollutant Of The Week</h2>
-                    <div class='embed-responsive' style='padding-bottom:150%'>
-                        <object data='/polluntant/pol.pdf' type='application/pdf' width='100%' height='100%'></object>
-                    </div>
+                    <h2>Featured Pollutant</h2>
+                    <img src="/polluntant/card1.png" class="mx-auto d-block img-fluid"></img>
                 </div>
 
                 <div class="col-md-6">
@@ -53,7 +51,9 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td><%= data.events[i].description %></td>
+                                            <td>
+                                                <%= data.events[i].description %>
+                                            </td>
                                         </tr>
                                         <% }; %>
                                 </tbody>

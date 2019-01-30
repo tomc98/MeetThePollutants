@@ -21,64 +21,88 @@
     </head>
 
     <body>
-        <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
-            <div class="container">
-                <h1>MEET THE POLLUTANTS</h1>
-            </div>
-        </div>
-        <div class="container-fluid" style="margin-top:30px">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <h2>Featured Pollutant</h2>
-                    <img src="/polluntant/card1.png" class="mx-auto d-block img-fluid"></img>
+        <% var numberOfPollutants = 1; %>
+            <% var currentFeature = day%numberOfPollutants; %>
+                <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+                    <div class="container">
+                        <h1>MEET THE POLLUTANTS</h1>
+                    </div>
                 </div>
-
-                <div class="col-md-6">
+                <div class="container-fluid" style="margin-top:30px">
                     <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="text-center">Events/News</h2>
-                            <table class="table table-hover">
-                                <tbody>
-                                    <% for(var i = 0; i < data.events.length; i++){ %>
-                                        <tr>
-                                            <td class="align-middle">
-                                                <div class="row text-center">
-                                                    <div class="col-md-12">
-                                                        <%= data.events[i].title %>
-                                                    </div>
-                                                    <div class="col-md-12">
-                                                        <%= data.events[i].date %>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <%= data.events[i].description %>
-                                            </td>
-                                        </tr>
-                                        <% }; %>
-                                </tbody>
-                            </table>
+                        <div class="col-xl-6 text-center">
+                            <h2>Featured Pollutant</h2>
+                            <img src="/polluntant/card1.png" class="mx-auto d-block img-fluid"></img>
                         </div>
-                        <div class="col-md-12 text-center">
-                            2
+
+                        <div class="col-xl-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="text-center">Events/News</h2>
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <% for(var i = 0; i < data.events.length; i++){ %>
+
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <a href="<%= data.events[i].url %>" style="color: inherit">
+                                                            <div class="row text-center">
+                                                                <div class="col-md-12">
+                                                                    <%= data.events[i].title %>
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <%= data.events[i].date %>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<%= data.events[i].url %>" style="color: inherit">
+                                                            <%= data.events[i].description %>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <% }; %>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-12">
+                                    <h2 class="text-center">Case Studies</h2>
+                                    <div class="row">
+                                        <% for(var i = 0; i < data.caseStudies[currentFeature].length; i++){ %>
+                                            <div class="col-sm-4 py-2">
+                                                <a href="<%= data.caseStudies[currentFeature][i].fileName %>" style="color: inherit">
+                                                    <div class="card h-100" style="width:100%">
+                                                        <img class="card-img-top" src="<%= data.caseStudies[currentFeature][i].fileImg %>" alt="Sample Page">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title text-center"><%= data.caseStudies[currentFeature][i].name %></h4>
+                                                            <p class="card-text">
+                                                                <%= data.caseStudies[currentFeature][i].description %>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <% }; %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            info for school
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            merch
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    info for school
+                <div class="jumbotron text-center" style="margin-bottom:0; margin-top:0">
+                    <p>Footer</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col text-center">
-                    merch
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron text-center" style="margin-bottom:0; margin-top:0">
-            <p>Footer</p>
-        </div>
     </body>
 
 </html>

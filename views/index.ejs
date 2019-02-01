@@ -23,12 +23,12 @@
     <body>
         <% var numberOfPollutants = 1; %>
             <% var currentFeature = day%numberOfPollutants; %>
-                <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
-                    <div class="container">
+                <section class="jumbHeader">
+                    <div class="container text-center">
                         <h1>MEET THE POLLUTANTS</h1>
                     </div>
-                </div>
-                <div class="container-fluid border" style="margin-top:30px">
+                </section>
+                <div class="container-fluid border">
                     <div class="row">
                         <div class="col-xl-6 text-center border">
                             <h2>Featured Pollutant</h2>
@@ -66,13 +66,13 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="col-md-12 border">
+                                <div class="col-md-12 border jumbHeader">
                                     <h2 class="text-center">Case Studies</h2>
                                     <div class="row">
                                         <% for(var i = 0; i < data.caseStudies[currentFeature].length; i++){ %>
                                             <div class="col-sm-4 py-2">
                                                 <a href="<%= data.caseStudies[currentFeature][i].fileName %>" style="color: inherit">
-                                                    <div class="card h-100" style="width:100%">
+                                                    <div class="card h-100" style="width:100%; background-color: inherit;">
                                                         <img class="card-img-top" src="<%= data.caseStudies[currentFeature][i].fileImg %>" alt="Sample Page">
                                                         <div class="card-body">
                                                             <h4 class="card-title text-center"><%= data.caseStudies[currentFeature][i].name %></h4>
@@ -93,16 +93,92 @@
                         <div class="col-12 border">
                             <h2 class="text-center">info for school</h2>
                         </div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary btn-block">Poster</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary btn-block">Stickers</button>
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="button" class="btn btn-primary btn-block">Info Kits</button>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-12 border">
                             <h2 class="text-center">merch</h2>
                         </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary btn-block">Mugs</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary btn-block">Shirts</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary btn-block">Posters</button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary btn-block">Cards</button>
+                        </div>
                     </div>
                 </div>
-                <div class="jumbotron text-center" style="margin-bottom:0; margin-top:0">
-                    <p>Footer</p>
-                </div>
+                <section class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class="text-center">
+                                                    Contact
+                                                </h2>
+                                                <br>
+                                            </div>
+                                            <div class="col-12">
+                                                Healthy Land and Water
+                                            </div>
+                                            <div class="col-12">
+                                                Level 19, 160 Ann Street, Brisbane 4000
+                                            </div>
+                                            <div class="col-12">
+                                                PO Box 13204, George Street, Brisbane Qld 4003
+                                            </div>
+                                            <div class="col-12">
+                                                Ph: (07) 3177 9100
+                                            </div>
+                                            <div class="col-12">
+                                                Fax: (07) 3177 9190
+                                            </div>
+                                            <div class="col-12">
+                                                Email: info@hlw.org.au
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        cc 4.0
+                                    </div>
+                                    <div class="col-md-4">
+                                        T&C
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="row">
+                                    <div class="col-12 logo">
+                                        <a href="https://waterbydesign.com.au/">
+                                            <img src="/wbdLogo2.png" alt="Water By Design" />
+                                        </a>
+                                    </div>
+                                    <div class="col-12 logo">
+                                        <a href="https://hlw.org.au/">
+                                            <img src="/hlwLogo2.png" alt="Healthy Land and Water" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
     </body>
 
 </html>

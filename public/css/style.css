@@ -64,3 +64,15 @@
     padding-bottom  : 5px;
     background-color: #07598a;
 }
+
+.middle-long-text {
+    max-width: 750px;
+    margin   : auto;
+}
+
+p {
+    font-size     : 1.125rem;
+    padding-bottom: 25px;
+    margin-top    : 0;
+    margin-bottom : 0.75rem;
+}

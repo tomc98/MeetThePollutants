@@ -7,6 +7,9 @@ var $ = require('jquery')
 var index = require('./routes/index');
 var terms = require('./routes/terms');
 var privacyPolicy = require('./routes/privacyPolicy');
+var pollutantList = require('./routes/pollutantList');
+var pollutant = require('./routes/pollutant');
+var videos = require('./routes/videos');
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
@@ -15,6 +18,9 @@ app.use(express.static('public'));
 app.use('/', index);
 app.use('/terms-and-conditions', terms);
 app.use('/privacy-policy', privacyPolicy);
+app.use('/pollutants', pollutantList);
+app.use('/pollutant', pollutant);
+app.use('/videos', videos);
 
 
 

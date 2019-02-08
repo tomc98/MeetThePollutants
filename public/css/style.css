@@ -2,7 +2,7 @@
     color           : #fff;
     position        : relative;
     padding-top     : 50px;
-    padding-bottom  : 50px;
+    padding-bottom  : 20px;
     background-color: #1a7bb4;
 }
 
@@ -66,8 +66,9 @@
 }
 
 .middle-long-text {
-    max-width: 750px;
-    margin   : auto;
+    max-width  : 750px;
+    margin     : auto;
+    padding-top: 20px;
 }
 
 p {
@@ -75,4 +76,25 @@ p {
     padding-bottom: 25px;
     margin-top    : 0;
     margin-bottom : 0.75rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.link-button {
+    background     : none;
+    border         : none;
+    text-decoration: underline;
+    cursor         : pointer;
+    font-size      : 1em;
+    font-family    : serif;
+}
+
+.link-button:focus {
+    outline: none;
+}
+
+.link-button:active {
+    color: red;
 }

@@ -4,7 +4,31 @@
         {"title":"World Science Fair Ipswich","date":"Sunday 17 March 2019","url":"http://www.worldsciencefestival.com.au/","description":"In 2019 The Workshops Rail Museum will turn into a science playground with FREE immersive and family-friendly events for everyone to enjoy. Take part in a range of hands-on activities that explore everything from new technology to environmental conservation, as you discover the wonder and excitement of science."},
         {"title":"World Science Fair Brisbane","date":"Saturday 23 March – Sunday 24 March 2019. 10am – 5pm","url":"http://www.worldsciencefestival.com.au/","description":"In 2019 World Science Festival Brisbane will again turn South Bank’s Cultural Forecourt into a science playground. Street Science! is a free two-day family-focused program full of immersive events for all ages to enjoy."}
     ],
-    "caseStudies":[
-        [{"fileName":"/polluntant/Esc_Soil_cover/ESC_Factsheet_Soil_Cover.pdf", "fileImg":"/polluntant/Esc_Soil_cover/Esc_Soil_cover.JPG", "name": "Esc Soil Cover", "description": "EROSION & SEDIMENT CONTROL TOOLKIT FOR HOUSE BUILDERS"},{"fileName":"/polluntant/Music_Guideline/HLW_MUSIC_Modelling_Guidelines_V3_Consultation_Draft.pdf", "fileImg":"/polluntant/Music_Guideline/1music_guideline.JPG", "name": "Music Guideline", "description": "Modelling Guidelines November 2018"},{"fileName":"/polluntant/Wetland_Technical_Design/Wetlands_Guidelines_Final_v1.0.pdf", "fileImg":"/polluntant/Wetland_Technical_Design/Wetland_Technical_Design.JPG", "name": "Wetland Guidelines", "description": "Wetland Technical Design Guideline"}]
+    "pollutants":[
+        {
+            "name": "Ph",
+            "description": "Ph is bad.",
+            "featureImg":"/polluntant/Card_demo_design/template5.png",
+            "caseStudies":[
+                {
+                    "fileName":"/polluntant/Esc_Soil_cover/ESC_Factsheet_Soil_Cover.pdf",
+                    "fileImg":"/polluntant/Esc_Soil_cover/Esc_Soil_cover.JPG",
+                    "name": "Esc Soil Cover",
+                    "description": "EROSION & SEDIMENT CONTROL TOOLKIT FOR HOUSE BUILDERS"
+                },
+                {
+                    "fileName":"/polluntant/Music_Guideline/HLW_MUSIC_Modelling_Guidelines_V3_Consultation_Draft.pdf",
+                    "fileImg":"/polluntant/Music_Guideline/1music_guideline.JPG",
+                    "name": "Music Guideline",
+                    "description": "Modelling Guidelines November 2018"
+                },
+                {
+                    "fileName":"/polluntant/Wetland_Technical_Design/Wetlands_Guidelines_Final_v1.0.pdf",
+                    "fileImg":"/polluntant/Wetland_Technical_Design/Wetland_Technical_Design.JPG",
+                    "name": "Wetland Guidelines",
+                    "description": "Wetland Technical Design Guideline"
+                }
+            ]
+        }
     ]
 }

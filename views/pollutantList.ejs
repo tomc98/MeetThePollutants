@@ -3,15 +3,15 @@
 
     <% include templates/head.ejs %>
 
-        <body>
+        <body class="body-background">
             <% include templates/header-big.ejs %>
-                <div class="container-fluid">
+                <div class="container-fluid" style="margin-top: 2em; margin-bottom: 2em;">
                     <div class="row">
                         <% for(var i = 0; i < data.pollutants.length; i++){ %>
                             <div class="col-12 col-md-3 col-xl-2">
-                                <form method="get" action="pollutant" class="inline">
+                                <form method="get" action="pollutant" class="inline" style="color: inherit">
                                     <input type="hidden" name="id" value="<%= i %>">
-                                    <button type="submit" class="link-button">
+                                    <button type="submit" class="link-button" style="color: inherit">
                                         <div class="card h-100" style="width:100%; background-color: inherit;">
                                             <img class="card-img-top" src="<%= data.pollutants[i].featureImg %>">
                                             <div class="card-body">

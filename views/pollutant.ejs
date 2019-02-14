@@ -3,22 +3,25 @@
 
     <% include templates/head.ejs %>
 
-        <body>
+        <body class="body-background">
             <% include templates/header-big.ejs %>
-            <% var currentFeature = id %>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xl-6 text-center">
-                            <h2><%= data.pollutants[currentFeature].name %></h2>
-                            <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
-                        </div>
-                        <div class="col-xl-6 text-center">
-                            <% include templates/caseStudies.ejs %>
+                <% var currentFeature = id %>
+                    <div class="container-fluid" style="margin-top: 2em; margin-bottom: 2em;">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6 text-center">
+                                <h2><%= data.pollutants[currentFeature].name %></h2>
+                                <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
+                            </div>
+                            <div class="col-xl-6 text-center">
+                                <div style="margin: 2em;">
+                                    <% include templates/caseStudies.ejs %>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
                     <% include templates/footer-big.ejs %>
                         <% include templates/footer.ejs %>
         </body>
+
 </html>

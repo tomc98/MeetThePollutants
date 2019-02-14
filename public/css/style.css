@@ -1,3 +1,11 @@
+.body-background {
+    background-color   : #1a7bb4;
+    background-position: center;
+    background-repeat  : repeat;
+    background-image   : url("/black-paper.png");
+    color              : white;
+}
+
 .jumbHeader {
     color           : #fff;
     position        : relative;
@@ -97,4 +105,16 @@ p {
 
 .link-button:active {
     color: red;
+}
+
+.margin-all-h {
+    margin: 0.5em;
+}
+
+.margin-all-1 {
+    margin: 1em;
+}
+
+.margin-all-2 {
+    margin: 2em;
 }

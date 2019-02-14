@@ -2,21 +2,25 @@
 <html>
     <% include templates/head.ejs %>
 
-        <body>
+        <body class="body-background">
             <% var numberOfPollutants = data.pollutants.length; %>
                 <% var currentFeature = day%numberOfPollutants; %>
                     <% include templates/header-big.ejs %>
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="margin-bottom: 2em;">
                             <div class="row">
-                                <div class="col-xl-6 text-center">
-                                    <h2>Featured Pollutant</h2>
+                                <div class="col-xl-6 text-center" style="margin-top: 2em;">
+                                    <div style="padding-bottom: 1em">
+                                        <h2>Featured Pollutant</h2>
+                                    </div>
                                     <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
                                 </div>
 
-                                <div class="col-xl-6">
-                                    <div class="row">
+                                <div class="col-xl-6" style="margin-top: 2em">
+                                    <div class="row" style="height: 100%">
                                         <div class="col-md-12">
-                                            <h2 class="text-center">Events/News</h2>
+                                            <div style="padding-bottom: 1em">
+                                                <h2 class="text-center">Events/News</h2>
+                                            </div>
                                             <table class="table table-hover">
                                                 <tbody>
                                                     <% for(var i = 0; i < data.events.length; i++){ %>
@@ -43,11 +47,13 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <% include templates/caseStudies.ejs %>
+                                        <div style="bottom: 0; margin: 2em;">
+                                            <% include templates/caseStudies.ejs %>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="margin: 2em;">
                                 <div class="col-12">
                                     <h2 class="text-center">info for school</h2>
                                 </div>
@@ -61,7 +67,7 @@
                                     <button type="button" class="btn btn-primary btn-block">Info Kits</button>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row" style="margin: 2em;">
                                 <div class="col-12">
                                     <h2 class="text-center">merch</h2>
                                 </div>

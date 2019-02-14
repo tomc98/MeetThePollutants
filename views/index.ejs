@@ -2,91 +2,94 @@
 <html>
     <% include templates/head.ejs %>
 
-        <body class="body-background">
-            <% var numberOfPollutants = data.pollutants.length; %>
-                <% var currentFeature = day%numberOfPollutants; %>
-                    <% include templates/header-big.ejs %>
-                        <div class="container-fluid" style="margin-bottom: 2em;">
-                            <div class="row">
-                                <div class="col-xl-6 text-center" style="margin-top: 2em;">
-                                    <div style="padding-bottom: 1em">
-                                        <h2>Featured Pollutant</h2>
-                                    </div>
-                                    <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
-                                </div>
+    <body class="body-background">
+        <% var numberOfPollutants = data.pollutants.length; %>
+        <% var currentFeature = day%numberOfPollutants; %>
+        <% include templates/header-big.ejs %>
+        <div class="container-fluid" style="margin-bottom: 2em;">
+            <div class="row">
+                <div class="col-xl-6 text-center" style="margin-top: 2em;">
+                    <div style="padding-bottom: 1em">
+                        <h2>Featured Pollutant</h2>
+                    </div>
+                    <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
+                </div>
 
-                                <div class="col-xl-6" style="margin-top: 2em">
-                                    <div class="row" style="height: 100%">
-                                        <div class="col-md-12">
-                                            <div style="padding-bottom: 1em">
-                                                <h2 class="text-center">Events/News</h2>
-                                            </div>
-                                            <table class="table table-hover">
-                                                <tbody>
-                                                    <% for(var i = 0; i < data.events.length; i++){ %>
-                                                        <tr>
-                                                            <td class="align-middle">
-                                                                <a href="<%= data.events[i].url %>" style="color: inherit">
-                                                                    <div class="row text-center">
-                                                                        <div class="col-md-12">
-                                                                            <h5><%= data.events[i].title %></h5>
-                                                                        </div>
-                                                                        <div class="col-md-12">
-                                                                            <sub><%= data.events[i].date %></sub>
-                                                                        </div>
-                                                                    </div>
-                                                                </a>
-                                                            </td>
-                                                            <td>
-                                                                <a href="<%= data.events[i].url %>" style="color: inherit">
-                                                                    <%= data.events[i].description %>
-                                                                </a>
-                                                            </td>
-                                                        </tr>
-                                                        <% }; %>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div style="bottom: 0; margin: 2em;">
-                                            <% include templates/caseStudies.ejs %>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-xl-6" style="margin-top: 2em">
+                    <div class="row" style="height: 100%">
+                        <div class="col-md-12">
+                            <div style="padding-bottom: 1em">
+                                <h2 class="text-center">Events/News</h2>
                             </div>
-                            <div class="row" style="margin: 2em;">
-                                <div class="col-12">
-                                    <h2 class="text-center">info for school</h2>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-primary btn-block">Poster</button>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-primary btn-block">Stickers</button>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="button" class="btn btn-primary btn-block">Info Kits</button>
-                                </div>
-                            </div>
-                            <div class="row" style="margin: 2em;">
-                                <div class="col-12">
-                                    <h2 class="text-center">merch</h2>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-primary btn-block">Mugs</button>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-primary btn-block">Shirts</button>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-primary btn-block">Posters</button>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-primary btn-block">Cards</button>
-                                </div>
-                            </div>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <% for(var i = 0; i < data.events.length; i++){ %>
+                                    <tr>
+                                        <td class="align-middle">
+                                            <a href="<%= data.events[i].url %>" style="color: inherit">
+                                                <div class="row text-center">
+                                                    <div class="col-md-12">
+                                                        <h5>
+                                                            <%= data.events[i].title %>
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <sub>
+                                                            <%= data.events[i].date %></sub>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="<%= data.events[i].url %>" style="color: inherit">
+                                                <%= data.events[i].description %>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <% }; %>
+                                </tbody>
+                            </table>
                         </div>
-                        <% include templates/footer-big.ejs %>
-                            <% include templates/footer.ejs %>
-        </body>
+                        <div style="bottom: 0; margin: 2em;">
+                            <% include templates/caseStudies.ejs %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin: 2em;">
+                <div class="col-12">
+                    <h2 class="text-center">info for school</h2>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary btn-block">Poster</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary btn-block">Stickers</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary btn-block">Info Kits</button>
+                </div>
+            </div>
+            <div class="row" style="margin: 2em;">
+                <div class="col-12">
+                    <h2 class="text-center">merch</h2>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-block">Mugs</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-block">Shirts</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-block">Posters</button>
+                </div>
+                <div class="col-sm-3">
+                    <button type="button" class="btn btn-primary btn-block">Cards</button>
+                </div>
+            </div>
+        </div>
+        <% include templates/footer-big.ejs %>
+        <% include templates/footer.ejs %>
+    </body>
 
 </html>

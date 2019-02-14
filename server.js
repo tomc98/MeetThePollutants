@@ -10,6 +10,7 @@ var privacyPolicy = require('./routes/privacyPolicy');
 var pollutantList = require('./routes/pollutantList');
 var pollutant = require('./routes/pollutant');
 var videos = require('./routes/videos');
+var about = require('./routes/about');
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'));
@@ -21,6 +22,7 @@ app.use('/privacy-policy', privacyPolicy);
 app.use('/pollutants', pollutantList);
 app.use('/pollutant', pollutant);
 app.use('/videos', videos);
+app.use('/about', about);
 
 
 

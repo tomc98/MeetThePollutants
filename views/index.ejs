@@ -60,13 +60,10 @@
                 <div class="col-12">
                     <h2 class="text-center">info for school</h2>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <button type="button" class="btn btn-primary btn-block">Poster</button>
                 </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn btn-primary btn-block">Stickers</button>
-                </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <button type="button" class="btn btn-primary btn-block">Info Kits</button>
                 </div>
             </div>
@@ -74,22 +71,35 @@
                 <div class="col-12">
                     <h2 class="text-center">merch</h2>
                 </div>
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary btn-block">Mugs</button>
-                </div>
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary btn-block">Shirts</button>
-                </div>
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary btn-block">Posters</button>
-                </div>
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-primary btn-block">Cards</button>
+                <div class="col-xl-12">
+                    <iframe id="merch" src="https://www.redbubble.com/people/waterbydesign/external-portfolio?count=7" width="100%" height="329" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
                 </div>
             </div>
         </div>
         <% include templates/footer-big.ejs %>
         <% include templates/footer.ejs %>
+
+        <script>
+            window.addEventListener("resize", executeResize);
+            window.addEventListener('DOMContentLoaded', executeResize);
+
+            function executeResize() {
+                var width = $(document).width();
+                var merch = document.getElementById("merch");
+                if (width >= 1830) {
+                    merch.height = "300";
+                } else if (width >= 1110) {
+                    merch.height = "500";
+                } else if (width >= 870) {
+                    merch.height = "715";
+                } else if (width >= 630) {
+                    merch.height = "950";
+                } else {
+                    merch.height = "1600";
+                }
+                console.log(width);
+            }
+        </script>
     </body>
 
 </html>

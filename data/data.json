@@ -1,4 +1,4 @@
-{
+﻿{
     "events":[
         {
             "title":"World Science Fair Gladstone",
@@ -49,6 +49,20 @@
                     "name": "Wetland Guidelines",
                     "description": "Wetland Technical Design Guideline"
                 }
+            ]
+        },
+	{
+            "name": "Gross pollutants",
+            "description": "Bin chicken.",
+            "featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
+            "caseStudies":[
+                {
+                    "fileName":"/polluntant/Fact_Sheets/Gross Pollutants Fact Sheet.docx",
+                    "fileImg":"/polluntant/Fact_Sheets/Gross pollutant.png",
+                    "name": "Gross Pollutants",
+                    "description": "Gross pollutants Factsheet"
+                }
+             
             ]
         }
     ]

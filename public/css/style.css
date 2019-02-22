@@ -1,8 +1,16 @@
+.body-background {
+    background-color   : #1a7bb4;
+    background-position: center;
+    background-repeat  : repeat;
+    background-image   : url("/black-paper.png");
+    color              : white;
+}
+
 .jumbHeader {
     color           : #fff;
     position        : relative;
-    padding-top     : 50px;
-    padding-bottom  : 50px;
+    padding-top     : 2em;
+    padding-bottom  : 20px;
     background-color: #1a7bb4;
 }
 
@@ -66,8 +74,9 @@
 }
 
 .middle-long-text {
-    max-width: 750px;
-    margin   : auto;
+    max-width  : 750px;
+    margin     : auto;
+    padding-top: 20px;
 }
 
 p {
@@ -75,4 +84,55 @@ p {
     padding-bottom: 25px;
     margin-top    : 0;
     margin-bottom : 0.75rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.link-button {
+    background     : none;
+    border         : none;
+    text-decoration: underline;
+    cursor         : pointer;
+    font-size      : 1em;
+    font-family    : serif;
+}
+
+.link-button:focus {
+    outline: none;
+}
+
+.link-button:active {
+    color: red;
+}
+
+.margin-all-h {
+    margin: 0.5em;
+}
+
+.margin-all-1 {
+    margin: 1em;
+}
+
+.margin-all-2 {
+    margin: 2em;
+}
+
+.img-crop-height {
+    /* max-width: 1200px; /* img src width (if known) */
+    max-height: 300px;
+    overflow  : hidden;
+}
+
+.img-scale {
+    /* corrects inline gap in enclosing div */
+    display               : block;
+    max-width             : 100%;
+    /* just in case, to force correct aspect ratio */
+    height                : auto !important;
+    width                 : auto\9;
+    /* ie8+9 */
+    /* lt ie8 */
+    -ms-interpolation-mode: bicubic;
 }

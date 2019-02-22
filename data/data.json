@@ -61,8 +61,18 @@
                     "fileImg":"/polluntant/Fact_Sheets/Gross pollutant.png",
                     "name": "Gross Pollutants",
                     "description": "Gross pollutants Factsheet"
-                }
-             
+                },
+             {
+            "name": "Fleece",
+            "description": "Bad plastic.",
+            "featureImg":"/polluntant/fleece/fleece.PNG",
+            "caseStudies":[
+                {
+                    "fileName":"/polluntant/fleece/fleece fact sheet.docx",
+                    "fileImg":"/polluntant/fleece/fleece.PNG",
+                    "name": "Fleece",
+                    "description": "Fleece Factsheet"
+                },
             ]
         }
     ]

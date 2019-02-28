@@ -54,11 +54,11 @@
 		{
 			"name": "Gross pollutants",
 			"description": "Bin chicken.",
-			"featureImg":"/polluntant/Fact_Sheets/grosspollutants.png",
+			"featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
 			"caseStudies":[
 				{
 					"fileName":"/polluntant/gross_pollutants/Gross Pollutants Fact Sheet.docx",
-					"fileImg":"/polluntant/gross_pollutants/grosspollutants.png",
+					"fileImg":"/polluntant/gross_pollutants/Gross Pollutant.png",
 					"name": "Gross Pollutants",
 					"description": "Gross pollutants Factsheet"
 				}
@@ -102,6 +102,6 @@
 					"description": "Herbicides Fact Sheet"
 				}
 			]
-		}        
+		}
     ]
 }

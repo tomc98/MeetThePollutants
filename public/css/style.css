@@ -1,17 +1,17 @@
 .body-background {
-    background-color   : #1a7bb4;
+    background-color   : #efe5ca;
     background-position: center;
     background-repeat  : repeat;
-    background-image   : url("/black-paper.png");
-    color              : white;
+    background-image   : url("/beige-paper.png");
+    color              : black;
 }
 
 .jumbHeader {
-    color           : #fff;
+    color           : black;
     position        : relative;
     padding-top     : 2em;
     padding-bottom  : 20px;
-    background-color: #1a7bb4;
+    background-color: #b7b43938;
 }
 
 .jumbHeader::before {
@@ -149,5 +149,34 @@ p {
     right     : 0;
     bottom    : 0;
     left      : 0;
-    background: linear-gradient(0deg,#80c342,#80c342 70%,rgba(128,195,66,0) 80%);
+    background: linear-gradient(0deg, #9c58ad,#d49aa0 55%,rgba(128,195,66,0) 60%);
+}
+
+.text-wrap {
+    position     : absolute;
+    padding-left : 12%;
+    padding-right: 12%;
+    z-index      : 3;
+    text-align   : center;
+    width        : 100%;
+    top          : 50%;
+}
+
+.text-wrap-2 {
+    position     : absolute;
+    padding-left : 12%;
+    padding-right: 12%;
+    z-index      : 3;
+    text-align   : center;
+    width        : 100%;
+    bottom       : 1em;
+}
+
+.btn-xlarge {
+    padding              : 10% 8%;
+    font-size            : 22px; //change this to your desired size
+    line-height          : normal;
+    -webkit-border-radius: 8px;
+    -moz-border-radius   : 8px;
+    border-radius        : 8px;
 }

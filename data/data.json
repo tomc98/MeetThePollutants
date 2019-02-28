@@ -33,75 +33,47 @@
             "caseStudies":[
                 {
                     "fileName":"/polluntant/Esc_Soil_cover/ESC_Factsheet_Soil_Cover.pdf",
-                    "fileImg":"/polluntant/Esc_Soil_cover/Esc_Soil_cover.jpg",
+                    "fileImg":"/polluntant/Esc_Soil_cover/Esc_Soil_cover.JPG",
                     "name": "Esc Soil Cover",
                     "description": "EROSION & SEDIMENT CONTROL TOOLKIT FOR HOUSE BUILDERS"
                 },
                 {
                     "fileName":"/polluntant/Music_Guideline/HLW_MUSIC_Modelling_Guidelines_V3_Consultation_Draft.pdf",
-                    "fileImg":"/polluntant/Music_Guideline/1music_guideline.jpg",
+                    "fileImg":"/polluntant/Music_Guideline/1music_guideline.JPG",
                     "name": "Music Guideline",
                     "description": "Modelling Guidelines November 2018"
                 },
                 {
                     "fileName":"/polluntant/Wetland_Technical_Design/Wetlands_Guidelines_Final_v1.0.pdf",
-                    "fileImg":"/polluntant/Wetland_Technical_Design/Wetland_Technical_Design.jpg",
+                    "fileImg":"/polluntant/Wetland_Technical_Design/Wetland_Technical_Design.JPG",
                     "name": "Wetland Guidelines",
                     "description": "Wetland Technical Design Guideline"
                 }
             ]
         },
-		{
-			"name": "Gross pollutants",
-			"description": "Bin chicken.",
-			"featureImg":"/polluntant/Fact_Sheets/grosspollutants.png",
-			"caseStudies":[
-				{
-					"fileName":"/polluntant/gross_pollutants/Gross Pollutants Fact Sheet.docx",
-					"fileImg":"/polluntant/gross_pollutants/grosspollutants.png",
-					"name": "Gross Pollutants",
-					"description": "Gross pollutants Factsheet"
-				}
-			]
-		},
-		{
-			"name": "Fleece",
-			"description": "Bad plastic.",
-			"featureImg":"/polluntant/fleece/fleece.png",
-			"caseStudies":[
-				{
-					"fileName":"/polluntant/fleece/fleece fact sheet.docx",
-					"fileImg":"/polluntant/fleece/fleece.png",
-					"name": "Fleece",
-					"description": "Fleece Factsheet"
-				}
-			]
-		},
-		{
-			"name": "Microorganisms",
-			"description": "Bad Bugs.",
-			"featureImg":"/polluntant/microorganisms/microorganisms.png",
-			"caseStudies":[
-				{
-					"fileName":"/polluntant/microorganisms/Microorganisms Fact Sheet.docx",
-					"fileImg":"/polluntant/microorganisms/microorganisms.png",
-					"name": "Microorganisms",
-					"description": "Microorganisms Factsheet"
-				}
-			]
-		},
-		{
-			"name": "Herbicides",
-			"description": "A Plants Doom.",
-			"featureImg":"/polluntant/herbicides/herbicides.png",
-			"caseStudies":[
-				{
-					"fileName":"/polluntant/herbicides/Herbicides Fact sheet.pdf",
-					"fileImg":"/polluntant/herbicides/herbicides.png",
-					"name": "Herbicides",
-					"description": "Herbicides Fact Sheet"
-				}
-			]
-		}        
+	{
+            "name": "Gross pollutants",
+            "description": "Bin chicken.",
+            "featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
+            "caseStudies":[
+                {
+                    "fileName":"/polluntant/Fact_Sheets/Gross Pollutants Fact Sheet.docx",
+                    "fileImg":"/polluntant/Fact_Sheets/Gross pollutant.png",
+                    "name": "Gross Pollutants",
+                    "description": "Gross pollutants Factsheet"
+                },
+             {
+            "name": "Fleece",
+            "description": "Bad plastic.",
+            "featureImg":"/polluntant/fleece/fleece.PNG",
+            "caseStudies":[
+                {
+                    "fileName":"/polluntant/fleece/fleece fact sheet.docx",
+                    "fileImg":"/polluntant/fleece/fleece.PNG",
+                    "name": "Fleece",
+                    "description": "Fleece Factsheet"
+                }
+            ]
+        }
     ]
 }

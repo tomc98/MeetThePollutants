@@ -136,3 +136,18 @@ p {
     /* lt ie8 */
     -ms-interpolation-mode: bicubic;
 }
+
+.colour-over {
+    display : inline-block;
+    position: relative;
+}
+
+.colour-over:after {
+    content   : "";
+    position  : absolute;
+    top       : 0;
+    right     : 0;
+    bottom    : 0;
+    left      : 0;
+    background: linear-gradient(0deg,#80c342,#80c342 70%,rgba(128,195,66,0) 80%);
+}

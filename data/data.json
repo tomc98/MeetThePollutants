@@ -43,8 +43,9 @@
                     "name": "Music Guideline",
                     "description": "Modelling Guidelines November 2018"
                 },
-                    "fileName":"/polluntant/ph/Fact sheet ph.docx",
-                    "fileImg":"/polluntant/ph/ph.png",
+                {
+                    "fileName": "/polluntant/ph/Fact sheet ph.docx",
+                    "fileImg": "/polluntant/ph/ph.png",
                     "name": "pH",
                     "description": "A brief description of pH and the damage it does to waterways"
                 },
@@ -63,7 +64,7 @@
 			"caseStudies":[
 				{
 					"fileName":"/polluntant/gross_pollutants/Gross Pollutants Fact Sheet.docx",
-					"fileImg":"/polluntant/gross_pollutants/Gross Pollutant.png",
+					"fileImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
 					"name": "Gross Pollutants",
 					"description": "Gross pollutants Factsheet"
 				}

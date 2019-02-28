@@ -51,7 +51,7 @@
                 }
             ]
         },
-	{
+        {
             "name": "Gross pollutants",
             "description": "Bin chicken.",
             "featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.PNG",
@@ -61,8 +61,10 @@
                     "fileImg":"/polluntant/Fact_Sheets/Gross Pollutant.PNG",
                     "name": "Gross Pollutants",
                     "description": "Gross pollutants Factsheet"
-                },
-             {
+                }
+            ]
+        },
+        {
             "name": "Fleece",
             "description": "Bad plastic.",
             "featureImg":"/polluntant/fleece/fleece.PNG",
@@ -73,10 +75,6 @@
                     "name": "Fleece",
                     "description": "Fleece Factsheet"
                 }
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
             ]
         }
     ]

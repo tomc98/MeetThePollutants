@@ -28,8 +28,8 @@
     "pollutants":[
         {
             "name": "Ph",
-            "description": "Ph is bad.",
-            "featureImg":"/polluntant/Card_demo_design/template5.png",
+            "description": "Potential of Hydrogen.",
+            "featureImg":"/polluntant/ph/ph.png",
             "caseStudies":[
                 {
                     "fileName":"/polluntant/Esc_Soil_cover/ESC_Factsheet_Soil_Cover.pdf",
@@ -59,14 +59,14 @@
         },
 		{
 			"name": "Gross pollutants",
-			"description": "Bin chicken.",
-			"featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
+			"description": "Pollies.",
+			"featureImg":"/polluntant/grosspollutants/grosspollutants.png",
 			"caseStudies":[
 				{
 					"fileName":"/polluntant/gross_pollutants/Gross Pollutants Fact Sheet.docx",
-					"fileImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
-					"name": "Gross Pollutants",
-					"description": "Gross pollutants Factsheet"
+					"fileImg":"/polluntant/grosspollutants/grosspollutants.png",
+					"name": "Pollies",
+					"description": "Gross Pollutants Factsheet"
 				}
 			]
 		},
@@ -85,7 +85,7 @@
 		},
 		{
 			"name": "Microorganisms",
-			"description": "Bad Bugs.",
+			"description": "Micro.",
 			"featureImg":"/polluntant/microorganisms/microorganisms.png",
 			"caseStudies":[
 				{
@@ -98,7 +98,7 @@
 		},
 		{
 			"name": "Herbicides",
-			"description": "A Plants Doom.",
+			"description": "Herby.",
 			"featureImg":"/polluntant/herbicides/herbicides.png",
 			"caseStudies":[
 				{

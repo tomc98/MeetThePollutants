@@ -43,6 +43,11 @@
                     "name": "Music Guideline",
                     "description": "Modelling Guidelines November 2018"
                 },
+                    "fileName":"/polluntant/ph/Fact sheet ph.docx",
+                    "fileImg":"/polluntant/ph/ph.png",
+                    "name": "pH",
+                    "description": "A brief description of pH and the damage it does to waterways"
+                },
                 {
                     "fileName":"/polluntant/Wetland_Technical_Design/Wetlands_Guidelines_Final_v1.0.pdf",
                     "fileImg":"/polluntant/Wetland_Technical_Design/Wetland_Technical_Design.jpg",

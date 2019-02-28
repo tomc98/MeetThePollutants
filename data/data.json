@@ -54,11 +54,11 @@
 	{
             "name": "Gross pollutants",
             "description": "Bin chicken.",
-            "featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.png",
+            "featureImg":"/polluntant/Fact_Sheets/Gross Pollutant.PNG",
             "caseStudies":[
                 {
                     "fileName":"/polluntant/Fact_Sheets/Gross Pollutants Fact Sheet.docx",
-                    "fileImg":"/polluntant/Fact_Sheets/Gross pollutant.png",
+                    "fileImg":"/polluntant/Fact_Sheets/Gross Pollutant.PNG",
                     "name": "Gross Pollutants",
                     "description": "Gross pollutants Factsheet"
                 },

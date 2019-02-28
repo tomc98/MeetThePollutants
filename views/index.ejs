@@ -4,7 +4,7 @@
 
     <body class="body-background">
         <% var numberOfPollutants = data.pollutants.length; %>
-        <% var currentFeature = day%numberOfPollutants; %>
+        <% var currentFeature = Math.floor(day/(366/numberOfPollutants)); %>
         <% include templates/header-big.ejs %>
         <div class="container-fluid" style="margin-bottom: 2em;">
             <div class="row">

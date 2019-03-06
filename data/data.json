@@ -44,7 +44,7 @@
                     "description": "Modelling Guidelines November 2018"
                 },
                 {
-                    "fileName": "/polluntant/ph/Fact sheet ph.docx",
+                    "fileName": "/polluntant/ph/Fact sheet pH.docx",
                     "fileImg": "/polluntant/ph/ph.png",
                     "name": "pH",
                     "description": "A brief description of pH and the damage it does to waterways"
@@ -63,7 +63,7 @@
 			"featureImg":"/polluntant/grosspollutants/grosspollutants.png",
 			"caseStudies":[
 				{
-					"fileName":"/polluntant/gross_pollutants/Gross Pollutants Fact Sheet.docx",
+					"fileName":"/polluntant/grosspollutants/Gross Pollutants Fact Sheet.docx",
 					"fileImg":"/polluntant/grosspollutants/grosspollutants.png",
 					"name": "Pollies",
 					"description": "Gross Pollutants Factsheet"
@@ -89,7 +89,7 @@
 			"featureImg":"/polluntant/microorganisms/microorganisms.png",
 			"caseStudies":[
 				{
-					"fileName":"/polluntant/microorganisms/Microorganisms Fact Sheet.docx",
+					"fileName":"/polluntant/microorganisms/Microorganisms Fact sheet.docx",
 					"fileImg":"/polluntant/microorganisms/microorganisms.png",
 					"name": "Microorganisms",
 					"description": "Microorganisms Factsheet"
@@ -102,7 +102,7 @@
 			"featureImg":"/polluntant/herbicides/herbicides.png",
 			"caseStudies":[
 				{
-					"fileName":"/polluntant/herbicides/Herbicides Fact sheet.pdf",
+					"fileName":"/polluntant/herbicides/Herbicides Fact sheet.docx",
 					"fileImg":"/polluntant/herbicides/herbicides.png",
 					"name": "Herbicides",
 					"description": "Herbicides Fact Sheet"

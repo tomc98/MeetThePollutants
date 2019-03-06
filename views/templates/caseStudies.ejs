@@ -1,10 +1,10 @@
-<div class="col-md-12" style="position: relative; padding-top: 3em; bottom: 0; box-shadow: 0 0px 0.5em 0.5em rgba(0, 0, 0, .5);">
+<div class="col-md-12 case-study-background" style="position: relative; padding-top: 3em; bottom: 0; box-shadow: 0 0px 0.5em 0.5em rgba(0, 0, 0, .5);">
     <h2 class="text-center" style="margin-bottom: 2em;">Case Studies</h2>
     <div class="row">
         <% for(var i = 0; i < data.pollutants[currentFeature].caseStudies.length; i++){ %>
             <div class="col-sm-4 py-2">
-                <a href="<%= data.pollutants[currentFeature].caseStudies[i].fileName %>" style="color: inherit">
-                    <div class="card h-100" style="width:100%; background-color: inherit; z-index: 3;">
+                <a href="<%= data.pollutants[currentFeature].caseStudies[i].fileName %>" style="color: inherit;">
+                    <div class="card h-100" style="width:100%; background-color: inherit; z-index: 3; border-style: groove; border-width: 7px; border-color: coral;  ">
                         <img class="card-img-top" src="<%= data.pollutants[currentFeature].caseStudies[i].fileImg %>" alt="Sample Page">
                         <div class="card-body">
                             <h4 class="card-title text-center"><%= data.pollutants[currentFeature].caseStudies[i].name %></h4>

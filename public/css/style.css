@@ -6,6 +6,14 @@
     color              : black;
 }
 
+.case-study-background {
+    background-color   : #b7b43938;
+    background-position: center;
+    background-repeat  : repeat;
+    background-image   : url("/beige-paper.png");
+    color              : black;
+}
+
 .jumbHeader {
     color           : black;
     position        : relative;

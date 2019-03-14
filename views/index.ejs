@@ -8,14 +8,29 @@
         <% include templates/header-big.ejs %>
         <div class="container-fluid" style="margin-bottom: 2em;">
             <div class="row">
-                <div class="col-xl-6 text-center" style="margin-top: 2em;">
+                <div class="col-12 text-center" style="margin-top: 2em;">
                     <div style="padding-bottom: 1em">
-                        <h2>Featured Pollutant</h2>
+                        <h2>Pollutant of the Week</h2>
                     </div>
                     <img src="<%= data.pollutants[currentFeature].featureImg %>" class="mx-auto d-block img-fluid"></img>
                 </div>
 
-                <div class="col-xl-6" style="margin-top: 2em">
+                <div class="col-12">
+                    <article class="middle-long-text">
+                        <p>
+                            pH stands for 'potential of hydrogen' and is used to measure how acidic or alkaline a substance is on a scale of 0-14. Freshwater and marine waterways become stressed if their pH levels fluctuate to much. This can have an
+                            impact on animals that live in these waterways as they struggle to tolerate changes to these pH levels.
+                        </p>
+                        <p>
+                            <strong>Some things you can do:</strong>
+                        </p>
+                        <p>
+                            Be careful how you dispose of acidic or alkaline substances. This includes monitoring for acid sulphate soils when doing major earthworks.
+                        </p>
+                    </article>
+                </div>
+
+                <div class="col-12" style="margin-top: 2em">
                     <div class="row" style="height: 100%">
                         <div class="col-md-12">
                             <div style="padding-bottom: 1em">
@@ -62,7 +77,7 @@
                     <p>Download our free resources.</p>
                 </div>
                 <div class="col-lg-2"></div>
-                <div class="col-lg-3 colour-over" style="padding: 0; margin-bottom: 0;">
+                <div class="col-lg-3 colour-over" style="padding: 0; margin-bottom: 0; box-shadow: 0 0px 0.5em 0.5em rgba(0, 0, 0, .5);">
                     <div>
                         <img style="padding: 0" class="mx-auto d-block img-fluid" src="/info-for-schools/poster.png"></img>
                     </div>
@@ -74,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
-                <div class="col-lg-3 colour-over" style="padding: 0; margin: 0;">
+                <div class="col-lg-3 colour-over" style="padding: 0; margin: 0; box-shadow: 0 0px 0.5em 0.5em rgba(0, 0, 0, .5);">
                     <div>
                         <img style="padding: 0" class="mx-auto d-block img-fluid" src="/info-for-schools/infoForSchools.png"></img>
                     </div>

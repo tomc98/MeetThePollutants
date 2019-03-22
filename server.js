@@ -25,7 +25,6 @@ app.use('/videos', videos);
 app.use('/about', about);
 
 
-
 app.listen(3000, function() {
     console.log('Website is open on port 3000!')
 })

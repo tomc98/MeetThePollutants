@@ -3,35 +3,37 @@
 
     <% include templates/head.ejs %>
 
-        <body class="body-background">
-            <% include templates/header-big.ejs %>
-                <div class="container-fluid" style="margin-top: 2em; margin-bottom: 2em;">
-                    <div class="row">
-                        <% for(var i = 0; i < data.pollutants.length; i++){ %>
-                            <div class="col-12 col-md-3 col-xl-2">
-                                <form method="get" action="pollutant" class="inline" style="color: inherit">
-                                    <input type="hidden" name="id" value="<%= i %>">
-                                    <button type="submit" class="link-button" style="color: inherit">
-                                        <div class="card h-100" style="width:100%; background-color: inherit;">
-                                            <img class="card-img-top" src="<%= data.pollutants[i].featureImg %>">
-                                            <div class="card-body">
-                                                <h4 class="card-title text-center"><%= data.pollutants[i].name %></h4>
-                                                <p class="card-text">
-                                                    <%= data.pollutants[i].description %>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </button>
-                                </form>
-
+    <body class="body-background">
+        <% include templates/header-big.ejs %>
+        <div class="container-fluid" style="margin-top: 2em; margin-bottom: 2em;">
+            <div class="row">
+                <% for(var i = 0; i < data.length; i++){ %>
+                <div class="col-12 col-md-3 col-xl-2">
+                    <form method="get" action="pollutant" class="inline" style="color: inherit">
+                        <input type="hidden" name="id" value="<%= data[i].Id %>">
+                        <button type="submit" class="link-button" style="color: inherit">
+                            <div class="card h-100" style="width:100%; background-color: inherit;">
+                                <img class="card-img-top" src="<%= data[i].featureImg %>">
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        <%= data[i].name %>
+                                    </h4>
+                                    <p class="card-text">
+                                        <%= data[i].description %>
+                                    </p>
+                                </div>
                             </div>
-                            <% }; %>
+                        </button>
+                    </form>
 
-                    </div>
                 </div>
+                <% }; %>
 
-                <% include templates/footer-big.ejs %>
-                    <% include templates/footer.ejs %>
-        </body>
+            </div>
+        </div>
+
+        <% include templates/footer-big.ejs %>
+        <% include templates/footer.ejs %>
+    </body>
 
 </html>
